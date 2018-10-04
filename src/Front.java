@@ -84,7 +84,9 @@ public class Front extends javax.swing.JFrame {
         msgTeacher=new TeacherData();
         msgAdmin=new AdminData();
         try{
+
         socket =new Socket(HOST,PORT);
+        // Creating streams for object and text transfer
         doout=new ObjectOutputStream(socket.getOutputStream());  
         doin=new ObjectInputStream(socket.getInputStream());
         dout=new DataOutputStream(socket.getOutputStream());
@@ -132,6 +134,7 @@ public class Front extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        // Adding variuos swing components
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
